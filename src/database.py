@@ -4,10 +4,10 @@ import pyodbc
 def get_connection():
 
     conn = pyodbc.connect(
-        "DRIVER={ODBC Driver 17 for SQL Server};"
-        "SERVER=DARSHAN\\SQLEXPRESS;"
-        "DATABASE=COVID19_DB;"
-        "Trusted_Connection=yes;"
+       "DRIVER={ODBC Driver 17 for SQL Server};"
+       "SERVER=YOUR_SQL_SERVER;"
+       "DATABASE=YOUR_DATABASE_NAME;" 
+       "Trusted_Connection=yes;"
     )
 
     return conn
